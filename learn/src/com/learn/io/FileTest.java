@@ -1,6 +1,7 @@
 package com.learn.io;
 
 import java.io.File;
+import java.io.IOException;
 
 public class FileTest {
 
@@ -20,5 +21,10 @@ public class FileTest {
 	    for (File file : dir.listFiles()) {
 	        listAllFiles(file);
 	    }
+	}
+	public void test() throws IOException {
+		File file = new File("a.txt");
+		file.createNewFile();
+
 	}
 }
